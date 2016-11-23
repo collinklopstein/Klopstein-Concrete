@@ -88,7 +88,7 @@ $("a[href^='#about']").click(function(event) {
         scrollTop: target_top
     }, 1000, 'easeInOutExpo');
 });
-$(".nav li a[href^='#']").click(function(event) {
+$(".nav li a[href^='#'], .footer-links li a[href^='#']").click(function(event) {
     event.preventDefault();
     var full_url = this.href;
     var parts = full_url.split("#");
