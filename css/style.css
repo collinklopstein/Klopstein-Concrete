@@ -234,7 +234,7 @@ header {
     text-align: center;
     font-size: 40px;
     color: #fff;
-    font-weight: 300;
+    font-weight: 500;
 }
 .home img{
     width: 100%;
@@ -295,6 +295,12 @@ footer {
 }
 .copyright {
     color: #BBB;
+    margin-bottom: 70px;
+}
+.copyright li{
+    padding-left: 5px;
+    padding-right: 5px;
+    vertical-align: middle;
 }
 li.heading {
     font-weight: 700;
@@ -1895,16 +1901,4 @@ section.typography {
 }
 .back-to-top i {
     color: #fff !important;
-}
-.oi {
-    position: relative;
-    top: 1px;
-    display: inline-block;
-    speak: none;
-    font-family: 'Icons';
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
