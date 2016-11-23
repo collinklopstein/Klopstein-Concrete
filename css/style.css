@@ -464,6 +464,10 @@ footer img {
     font-size: 18px;
     letter-spacing: 0;
 }
+.copyright li{
+    float: left;
+    list-style: none;
+}
 /*COLOR SWITCHER*/
 
 #toggle_button {
@@ -1890,6 +1894,17 @@ section.typography {
     margin: 3px 1.5px;
 }
 .back-to-top i {
-    color: #fff;
+    color: #fff !important;
 }
-
+.oi {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    speak: none;
+    font-family: 'Icons';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
