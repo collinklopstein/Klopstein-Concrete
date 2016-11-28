@@ -135,13 +135,14 @@ var lastId,
         });
         ///////////////FANCYBOX 
         $(".fancybox-media").fancybox({
-            arrows: true,
+            showNavArrows: true,
             padding: 0,
             closeBtn: true,
             openEffect: 'fade',
             closeEffect: 'fade',
             prevEffect: 'fade',
             nextEffect: 'fade',
+            centerOnScroll: true,
             helpers: {
                 media: {},
                 overlay: {
@@ -161,5 +162,6 @@ var lastId,
                     }
                 }
             }
+           
         });
     });

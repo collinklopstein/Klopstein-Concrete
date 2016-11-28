@@ -37,7 +37,38 @@
     }
  }
  /* Landscape phone to portrait tablet */
- 
+ @media (max-width: 992px){
+    header {
+    background: url(../images/huntlieghBW.png) no-repeat no-repeat bottom center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+
+    #portfolio-background {
+    background-image: url(../images/ben1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-color: #F0FCFF;
+    padding: 150px 0;
+    text-shadow: 1px 1px 1px #000;
+    background-size: cover;
+    }
+
+    #contact-background {
+    background-image: url(../images/lsl3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-color: #F0FCFF;
+    padding: 150px 0;
+    text-shadow: 1px 1px 1px #000;
+    background-size: cover;
+    }
+    #about{
+        min-height: 767px;
+    }
+ }
  @media (max-width: 767px) {
      .post-img .icons {
          padding-top: 40px;

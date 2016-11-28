@@ -289,13 +289,15 @@ footer {
     color: #888;
     display: block;
     background: #3B3B3B;
-    padding: 50px 0 100px;
+    /*padding: 50px 0 100px;*/
     position: relative;
     width: 100%;
+    min-height: 0;
 }
 .copyright {
     color: #BBB;
-    margin-bottom: 70px;
+    /*margin-bottom: 70px;*/
+    padding: 10px;
 }
 .copyright li{
     padding-left: 5px;
@@ -920,6 +922,7 @@ html[xmlns] .slides {
     line-height: 1;
     letter-spacing: -3px;
     text-align: center;
+    margin-bottom: 30px;
 }
 /*Sub Headings*/
 
@@ -996,18 +999,25 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 /* -------------------------------------------------------- */
 
 .form-menu input[type=text], .form-menu input[type=password] {
+    position: relative;
     width: auto;
     margin-top: 10px;
     color: #979797;
     background: #464646;
     border-radius: 0;
     border-color: #5a5a5a;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 42px; // Increase height as required
+    margin-bottom: 30px;
+    padding: 0 20px; // Now only left & right padding
 }
 .form-main input, .form-main textarea {
     position: relative;
-    height: 20px;
+    //height: 20px;
     width: 100%;
-    padding: 16px 12px 14px;
+    //padding: 16px 12px 14px;
     margin-top: 10px;
     color: #979797;
     background: #464646;
@@ -1732,7 +1742,7 @@ section.index-description {
     font-size: 18px;
 }
 .index-description h1 {
-    color: #8C1313;
+    color: #AA1414;
 }
 
 .index-description img{
