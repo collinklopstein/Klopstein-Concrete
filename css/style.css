@@ -1732,13 +1732,36 @@ a, a:hover {
 
 section.index-description {
     /*border-top: 1px solid #FFFDFD;*/
-    background: #fff;
     box-shadow: none;
-    border-bottom: 1px solid #ddd;
-    padding: 20px 80px;
+    
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    position: relative;
+    height: 769px;
+    overflow: hidden;
 }
+.index-description .about-desc{
+    flex-basis: 50%;
+    padding: 80px;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+     color: #000000;
+}
+.index-description .about-image{
+  background-image: url(../images/jackson1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  flex-basis: 50%;
+}
+
 .index-description p {
-    color: #8E959C;
     font-size: 18px;
 }
 .index-description h1 {

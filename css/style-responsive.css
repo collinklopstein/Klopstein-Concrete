@@ -1,7 +1,15 @@
  /*Document: style-responsive Created on: 02-Apr-2013, 14:36:13 Author: Aslam Description: Purpose of the stylesheet follows. */
   /*Large desktop */
  
- @media (min-width: 1200px) {}
+ @media (max-width: 1280px) {
+    .index-description .about-desc{
+    flex-basis: 50%;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+ }
  /* Portrait tablet to landscape and desktop */
  
  @media (min-width: 768px) and (max-width: 992px) {
@@ -67,6 +75,13 @@
     }
     #about{
         min-height: 767px;
+    }
+    .index-description .about-image{
+        display: none;
+    }
+
+    .index-description .about-desc{
+        flex-basis: 100%;
     }
  }
  @media (max-width: 767px) {

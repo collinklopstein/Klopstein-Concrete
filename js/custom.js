@@ -88,6 +88,28 @@ $("a[href^='#about']").click(function(event) {
         scrollTop: target_top
     }, 1000, 'easeInOutExpo');
 });
+$("a[href^='#portfolio']").click(function(event) {
+    event.preventDefault();
+    var full_url = this.href;
+    var parts = full_url.split("#");
+    var trgt = parts[1];
+    var target_offset = $("#" + trgt).offset();
+    var target_top = target_offset.top - 89;
+    $('html, body').animate({
+        scrollTop: target_top
+    }, 1000, 'easeInOutExpo');
+});
+$("a[href^='#contact']").click(function(event) {
+    event.preventDefault();
+    var full_url = this.href;
+    var parts = full_url.split("#");
+    var trgt = parts[1];
+    var target_offset = $("#" + trgt).offset();
+    var target_top = target_offset.top - 89;
+    $('html, body').animate({
+        scrollTop: target_top
+    }, 1000, 'easeInOutExpo');
+});
 $(".nav li a[href^='#'], .footer-links li a[href^='#']").click(function(event) {
     event.preventDefault();
     var full_url = this.href;
@@ -101,7 +123,7 @@ $(".nav li a[href^='#'], .footer-links li a[href^='#']").click(function(event) {
 });
 
  $(function () {
-            $('.navbar-collapse ul li a:not(.dropdown-toggle)').bind('click touchstart', function () {
+            $('.navbar-collapse ul li a:not(.dropdown-toggle)').bind('click', function () {
                     $('.navbar-toggle:visible').click();
             });
     });
@@ -162,6 +184,6 @@ var lastId,
                     }
                 }
             }
-           
         });
+         
     });
