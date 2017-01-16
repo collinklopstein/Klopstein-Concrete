@@ -1,7 +1,7 @@
 <?php
 if($_POST)
 {
-    $to_Email       = "collin@klopcrete.com"; //Replace with recipient email address
+    $to_Email       = "klopc137@hotmail.com"; //Replace with recipient email address
     $subject        = 'Mail from klopcrete.com'; //Subject line for emails
     
     
@@ -19,11 +19,11 @@ if($_POST)
     } 
     
     //check $_POST vars are set, exit if any missing
-    /*if(!isset($_POST["userName"]) || !isset($_POST["userEmail"]) || !isset($_POST["userMessage"]))
+    if(!isset($_POST["userName"]) || !isset($_POST["userEmail"]) || !isset($_POST["userMessage"]))
     {
         $output = json_encode(array('type'=>'error', 'text' => 'Input fields are empty!'));
         die($output);
-    }*/
+    }
 
     //Sanitize input data using PHP filter_var().
     $user_Name        = filter_var($_POST["userName"], FILTER_SANITIZE_STRING);
@@ -44,7 +44,7 @@ if($_POST)
  
     if(strlen($user_Message)<5) //check emtpy message
     {
-        $output = json_encode(array('type'=>'error', 'text' => 'Too short message! Please enter something.'));
+        $output = json_encode(array('type'=>'error', 'text' => 'Please enter a more detailed message.'));
         die($output);
     }
     
@@ -60,7 +60,7 @@ if($_POST)
         $output = json_encode(array('type'=>'error', 'text' => 'Could not send mail! Please check your PHP mail configuration.'));
         die($output);
     }else{
-        $output = json_encode(array('type'=>'message', 'text' => 'Hi '.$user_Name .' Your email has been sent. Thank you for your email'));
+        $output = json_encode(array('type'=>'message', 'text' => 'Hi '.$user_Name .' Your email has been sent. One of our representatives will get back to you.'));
         die($output);
     }
 }
