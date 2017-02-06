@@ -1,1 +1,0 @@
-# Klopstein-Concrete

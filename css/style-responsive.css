@@ -11,7 +11,16 @@
 }
  }
  /* Portrait tablet to landscape and desktop */
- 
+ @media(min-width: 992px) and (max-width: 1025px){
+    #portfolio-container .isotope{
+        min-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+ }
+
  @media (min-width: 768px) and (max-width: 992px) {
      h2 {
          font-size: 30px;
@@ -113,6 +122,18 @@
     .portfolio .mobile-alert{
         display: block;
     }
+
+    .portfolio-container{
+        min-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #portfolio.container{
+         min-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
  }
  @media (max-width: 570px) {
      #navigation .nav.page li.active:after {
@@ -138,6 +159,11 @@
          font-size: 20px;
          margin: 0;
      }
+     #portfolio.container{
+         min-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
      .post-img:hover .icons{
         padding: 60px 200px;
      }

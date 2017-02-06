@@ -2,7 +2,6 @@
 ////////////////PORTFOLIO 
 
 $(function() {
-
     var $container = $('#portfolio-container'),
         $filters = $("#filters a");
 
@@ -16,7 +15,13 @@ $(function() {
 
         });
     });
-
+    $(window).load(function(){
+        $container.isotope({
+        masonry: { 
+            columnWidth: 0
+            }
+      });
+    });
     $(window).smartresize(function(){
       $container.isotope({
         masonry: { columnWidth: 0}
