@@ -53,10 +53,7 @@ $(document).ready(function() {
             });
         });
     });
-    ////////Flexslider Image Height
-    $(function() {
-        
-    });
+   
     //////// NICE SCROLL JS
     $(function() {
         $("html").niceScroll({
@@ -159,6 +156,7 @@ var lastId,
         $(".fancybox-media").fancybox({
             showNavArrows: true,
             padding: 0,
+            margin: 15,
             closeBtn: true,
             openEffect: 'fade',
             closeEffect: 'fade',
@@ -184,6 +182,5 @@ var lastId,
                     }
                 }
             }
-        });
-         
+        });  
     });

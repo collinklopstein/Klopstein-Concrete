@@ -10,7 +10,8 @@ $(function() {
             itemSelector: '.project',
             filter: ':nth-child(-n+8)',
             masonry: {
-                columnWidth: 0
+                columnWidth: 0,
+                isFitWidth: true
             }
 
         });
@@ -18,16 +19,20 @@ $(function() {
     $(window).load(function(){
         $container.isotope({
         masonry: { 
-            columnWidth: 0
+            columnWidth: 0,
+            isFitWidth: true
             }
       });
     });
+
+
     $(window).smartresize(function(){
       $container.isotope({
-        masonry: { columnWidth: 0}
+        masonry: { columnWidth: 0,
+                    isFitWidth: true
+                }
       });
     });
-
     // filter items when filter link is clicked
     $filters.click(function() {
         $filters.removeClass("active");

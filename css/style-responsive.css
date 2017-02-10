@@ -19,6 +19,7 @@
         padding-left: 0;
         padding-right: 0;
     }
+    
  }
 
  @media (min-width: 768px) and (max-width: 992px) {
@@ -52,6 +53,9 @@
      .portfolio .mobile-alert{
         display: block;
     }
+    #about{
+       max-height: 600px;
+    }
  }
  /* Landscape phone to portrait tablet */
  @media (max-width: 992px){
@@ -73,6 +77,11 @@
     background-size: cover;
     }
 
+    #portfolio-container{
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 15px;
+    }
     #contact-background {
     background-image: url(../images/lsl3.jpg);
     background-repeat: no-repeat;
@@ -82,9 +91,7 @@
     text-shadow: 1px 1px 1px #000;
     background-size: cover;
     }
-    #about{
-        min-height: 767px;
-    }
+    
     .index-description .about-image{
         display: none;
     }
@@ -128,7 +135,7 @@
         padding: 0;
         margin: 0;
     }
-
+    
     #portfolio.container{
          min-width: 100%;
         padding: 0;
@@ -145,12 +152,13 @@
      .carousel-control.right {
          right: 0;
      }
+     
  }
  /* Landscape phones and down */
  
  @media (max-width: 480px) {
     #about{
-        min-height: 767px;
+        max-height: 767px !important;
     }
     #portfolio #filters{
         margin-bottom: 80px;
@@ -159,10 +167,17 @@
          font-size: 20px;
          margin: 0;
      }
-     #portfolio.container{
-         min-width: 100%;
+     #portfolio-container{
+        min-width: 100%;
         padding: 0;
-        margin: 0;
+        margin-left: 25px;   
+    }
+    #portfolio-background, #contact-background{
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    #portfolio-background h1, #contact-background h1{
+        font-size: 48px;
     }
      .post-img:hover .icons{
         padding: 60px 200px;
